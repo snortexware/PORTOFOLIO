@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* navbarStyles.css */
+.custom-navbar {
+    margin-top: 20px;
+    background-color: #111d5e; /* Cor desejada */
+  }
+  .custom-navbar-content{
+    margin-right: 5%;
+    
+  }
+  

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+  
+  .custom-button {
+    display: flex;
+    gap:10px;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    padding: 10px 20px; /* Adjust padding for better sizing */
+    border-radius: 15px;
+    font-size: 1rem;
+    color: #e0ffff;
+    font-family: 'Zilla Slab';
+    font-weight: inherit;
+    cursor: pointer;
+    z-index: 1;
+    transition: color 0.3s; /* Smooth color transition */
+  }
+  
+  .custom-button:active {
+    transform: scale(0.95);
+  }
+  
+  .custom-button::before {
+    content: '';
+    position: absolute;
+    inset: -3px 40px; /* Starting position */
+    transition: inset 0.35s ease, background 0.35s ease, border 0.35s ease; /* Smooth transition */
+    border-radius: 15px; /* Match the button border radius */
+    background: transparent; /* Start transparent */
+    border: 2px solid transparent; /* Start with a transparent border */
+    z-index: -2;
+  }
+  
+  .custom-button:hover::before {
+    inset: -1px 0px; /* Ending position on hover */
+    border: 2px solid #eff1fa; /* Change border color on hover */
+  }
+  
+  .custom-button::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    border-radius: 10px;
+    z-index: -1;
+    transition: background 0.3s; /* Smooth background transition */
+  }
+  
+  .custom-button:hover::after {
+  }
+  
+  .custom-button:not(:hover)::before {
+    inset: -3px 40px; /* Return to the original position when not hovering */
+    background: transparent; /* Reset to transparent */
+    border: 2px solid transparent; /* Reset to transparent border */
+  }
+  
