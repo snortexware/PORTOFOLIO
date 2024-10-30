@@ -1,17 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rowdies:wght@300;400;700&family=Varela+Round&display=swap');
 
-  
+  .custom-button-number{
+    
+    font-size: 12px;
+    font-family: Roboto Mono; 
+    color: #00bbf0;
+  }
+
   .custom-button {
     display: flex;
     gap:10px;
     position: relative;
     overflow: hidden;
     background: transparent;
-    padding: 10px 20px; /* Adjust padding for better sizing */
+    padding: 10px 15px; /* Adjust padding for better sizing */
     border-radius: 15px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #e0ffff;
-    font-family: 'Zilla Slab';
+    font-family: 'Roboto Mono';
     font-weight: inherit;
     cursor: pointer;
     z-index: 1;
@@ -25,7 +31,7 @@
   .custom-button::before {
     content: '';
     position: absolute;
-    inset: -3px 40px; /* Starting position */
+    inset: -3px 30px; /* Starting position */
     transition: inset 0.35s ease, background 0.35s ease, border 0.35s ease; /* Smooth transition */
     border-radius: 15px; /* Match the button border radius */
     background: transparent; /* Start transparent */
@@ -35,7 +41,7 @@
   
   .custom-button:hover::before {
     inset: -1px 0px; /* Ending position on hover */
-    border: 2px solid #eff1fa; /* Change border color on hover */
+    border: 2px solid #00bbf0; /* Change border color on hover */
   }
   
   .custom-button::after {
@@ -46,12 +52,10 @@
     z-index: -1;
     transition: background 0.3s; /* Smooth background transition */
   }
-  
-  .custom-button:hover::after {
-  }
+
   
   .custom-button:not(:hover)::before {
-    inset: -3px 40px; /* Return to the original position when not hovering */
+    inset: -3px 30px; /* Return to the original position when not hovering */
     background: transparent; /* Reset to transparent */
     border: 2px solid transparent; /* Reset to transparent border */
   }

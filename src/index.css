@@ -5,9 +5,12 @@
 .custom-navbar {
     margin-top: 20px;
     background-color: #111d5e; /* Cor desejada */
+    display: flex;
+    color: rgb(244, 244, 244);
+    font-family: "Space Mono", "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   }
-  .custom-navbar-content{
-    margin-right: 5%;
-    
+  .custom-navmenu{
+    background-color:#111d5e;
   }
+
   
