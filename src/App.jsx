@@ -42,7 +42,17 @@ function App() {
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
           </style>
-          <div>
+          <motion.div
+       
+       initial={{ opacity: 0, x: -30 }}
+       whileInView={{
+         opacity: 1,
+         x: 0,
+       }}
+       animate={{ opacity: 1, x: 0}}
+       exit={{ opacity: 0, x: 60 }}
+       transition={{ duration: 0.3, ease: "easeInOut" }}
+     >
 
           <Typography style={{ marginLeft:"0.5%", fontSize: "13px", fontFamily: 'Roboto Mono', marginBottom: '5px', color: '#00bbf0' }}>Bem vindo, Eu sou</Typography>
           <Typewriter style={{ fontSize: '60px',  color: 'white' }} text={"Lucas Moreira Albino."} delay={60} />
@@ -51,7 +61,7 @@ function App() {
             Sou um desenvolvedor de software baseado em Gaspar, SC, 
             especializado <br></br>na criação de sites excepcionais, além de tudo que há entre eles.
           </p>
-          </div>
+          </ motion.div>
         <Button style={{marginTop: '30px'}}color="primary" variant="bordered">
         Teste
       </Button>
