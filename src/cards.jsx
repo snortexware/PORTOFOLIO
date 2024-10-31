@@ -1,64 +1,81 @@
-import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
+import { Card, CardBody, CardFooter } from "@nextui-org/react";
+import { Typography } from "@mui/joy";
+import FolderOpenIcon from '@mui/icons-material/FolderOpen';
 
 export default function Cards1() {
-  const list = [
-    {
-      title: "Orange",
-      img: "/images/fruit-1.jpeg",
-      price: "$5.50",
-    },
-    {
-      title: "Tangerine",
-      img: "/images/fruit-2.jpeg",
-      price: "$3.00",
-    },
-    {
-      title: "Raspberry",
-      img: "/images/fruit-3.jpeg",
-      price: "$10.00",
-    },
-    {
-      title: "Lemon",
-      img: "/images/fruit-4.jpeg",
-      price: "$5.30",
-    },
-    
-  ];
-
   return (
-    
-    <div className="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
-      {list.map((item, index) => (
-        <Card
-          style={{
-            width: '100%', // Set width to full to utilize grid space
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-          shadow="sm"
-          key={index}
-          isPressable
-          onPress={() => console.log("item pressed")}
-        >
-          <CardBody className="overflow-visible p-0">
-            <Image
-              shadow="sm"
-              radius="lg"
-              width="100%"
-              alt={item.title}
-              className="object-cover h-[140px]"
-              src={item.img}
-            />
-          </CardBody>
-          <CardFooter className="text-small justify-between">
-            <b>{item.title}</b>
-            <p className="text-default-500">{item.price}</p>
-          </CardFooter>
+    <>
+      <Typography 
+        style={{ 
+          marginBottom: "5%", 
+          display: 'flex', 
+          fontFamily: "Lexend Deca", 
+          fontSize: "25px", 
+          justifyContent: "center", 
+          alignItems: "center" 
+        }}
+      >
+        Projetos
+      </Typography>
+      <div className="max-w-[900px] gap-4 grid grid-cols-1 sm:grid-cols-2 px-8">
+        
+        {/* Orange Card */}
+        <Card className="flex flex-col h-[300px] w-[80vw] sm:w-[45%] md:w-[300px] lg:w-[400px] bg-[#1A1336] p-8 rounded-lg shadow-lg transition-transform duration-700 ease-in-out hover:translate-y-[-5px] hover:shadow-xl">
+          <div className="flex flex-col h-full">
+            <FolderOpenIcon size={'lg'} />
+            <CardBody className="overflow-visible p-0 flex-grow">
+              <h1 className="text-white">Hello</h1>
+            </CardBody>
+            <CardFooter className="text-small justify-between">
+              <b className="text-white">Orange</b>
+              <p className="text-default-500">$5.50</p>
+            </CardFooter>
+          </div>
         </Card>
 
-      ))}
-    </div>
+        {/* Tangerine Card */}
+        <Card className="flex flex-col h-[300px] w-[80vw] sm:w-[45%] md:w-[300px] lg:w-[400px] bg-[#1A1336] p-8 rounded-lg shadow-lg transition-transform duration-700 ease-in-out hover:translate-y-[-5px] hover:shadow-xl">
+          <div className="flex flex-col h-full">
+            <FolderOpenIcon size={'lg'} />
+            <CardBody className="overflow-visible p-0 flex-grow">
+              <h1 className="text-white">Hello</h1>
+            </CardBody>
+            <CardFooter className="text-small justify-between">
+              <b className="text-white">Tangerine</b>
+              <p className="text-default-500">$3.00</p>
+            </CardFooter>
+          </div>
+        </Card>
+
+        {/* Raspberry Card */}
+        <Card className="flex flex-col h-[300px] w-[80vw] sm:w-[45%] md:w-[300px] lg:w-[400px] bg-[#1A1336] p-8 rounded-lg shadow-lg transition-transform duration-700 ease-in-out hover:translate-y-[-5px] hover:shadow-xl">
+          <div className="flex flex-col h-full">
+            <FolderOpenIcon size={'lg'} />
+            <CardBody className="overflow-visible p-0 flex-grow">
+              <h1 className="text-white">Hello</h1>
+            </CardBody>
+            <CardFooter className="text-small justify-between">
+              <b className="text-white">Raspberry</b>
+              <p className="text-default-500">$10.00</p>
+            </CardFooter>
+          </div>
+        </Card>
+
+        {/* Lemon Card */}
+        <Card className="flex flex-col h-[300px] w-[80vw] sm:w-[45%] md:w-[300px] lg:w-[400px] bg-[#1A1336] p-8 rounded-lg shadow-lg transition-transform duration-1000 ease-in-out hover:translate-y-[-5px] hover:shadow-xl">
+          <div className="flex flex-col h-full">
+            <FolderOpenIcon size={'lg'} />
+            <CardBody className="overflow-visible p-0 flex-grow">
+              <h1 className="text-white">Hello</h1>
+            </CardBody>
+            <CardFooter className="text-small justify-between">
+              <b className="text-white">Lemon</b>
+              <p className="text-default-500">$5.30</p>
+            </CardFooter>
+          </div>
+        </Card>
+
+      </div>
+    </>
   );
 }

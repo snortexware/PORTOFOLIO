@@ -90,6 +90,7 @@ const APR = () => {
       <Button
         style={{ fontFamily: "Lexend Deca", marginTop: "30px" }}
         color="primary"
+        radius="full"
         variant="bordered"
       >
         Entre em contato

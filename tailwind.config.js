@@ -9,7 +9,11 @@ export default {
 
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'sm-md': '640px', // Custom breakpoint between sm and md
+      },
+    },
   },  darkMode: "class",
   plugins: [nextui()]
 }
