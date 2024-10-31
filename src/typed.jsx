@@ -22,7 +22,7 @@ const Typewriter = ({ text, delay }) => {
         @import
         url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Rowdies:wght@300;400;700&family=Varela+Round&display=swap');
       </style>
-      <h1 style={{ fontFamily: "Lexend Deca ", fontSize: "75px" }}>{currentText}</h1>
+      <h1 style={{ fontFamily: "Lexend Deca ", fontSize: "clamp(23px, 5vw, 100px)" }}>{currentText}</h1>
     </>
   );
 };
