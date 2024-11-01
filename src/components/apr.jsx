@@ -20,7 +20,6 @@ const APR = () => {
         justifyContent:'center',
         alignItems:'center',
         maxWidth: "100vw",
-        margin: '0 auto'
       }}
     >
       <motion.div
@@ -100,6 +99,7 @@ const APR = () => {
       </Button>
       </motion.div>
       <div>
+      <div style={{ padding:'130px 0'}}></div>
 
       </div>
     </div>

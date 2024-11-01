@@ -25,10 +25,12 @@ function App() {
       <Navbar_novo />
 
       <APR />
-      <div>
+
+      
+<div>
 
       <Cards1 />
-      </div>
+</div>
     </div>
   );
 }

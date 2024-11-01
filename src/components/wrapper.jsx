@@ -12,11 +12,12 @@ const ScrollRevealWrapper = ({ width, children, duration = 1.1 }) => {
 
     <motion.div
     ref={ref}
-    initial={{ opacity: 0, y: 30 }}
+    initial={{ opacity: 0, y: 50 }}
     animate={inView ? { opacity: 1, y: 0 } : {}}
     transition={{ duration, ease: 'anticipate' }}
     >
       <div >
+
 
       {children}
       </div>
