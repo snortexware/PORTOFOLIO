@@ -1,81 +1,211 @@
-import { Card, CardBody, CardFooter } from "@nextui-org/react";
+import {
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  Avatar,
+  Button,
+} from "@nextui-org/react";
 import { Typography } from "@mui/joy";
-import FolderOpenIcon from '@mui/icons-material/FolderOpen';
+import FolderOpenIcon from "@mui/icons-material/FolderOpen";
+import { BiFolderOpen } from "react-icons/bi";
+import React from "react";
+import { TfiNewWindow } from "react-icons/tfi";
+import { FaGithub } from "react-icons/fa6";
+import ScrollRevealWrapper from "./components/wrapper";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 export default function Cards1() {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0,
+  });
   return (
-    <>
-      <Typography 
-        style={{ 
-          marginBottom: "5%", 
-          display: 'flex', 
-          fontFamily: "Lexend Deca", 
-          fontSize: "25px", 
-          justifyContent: "center", 
-          alignItems: "center" 
-        }}
-      >
-        Projetos
-      </Typography>
-      <div className="max-w-[900px] gap-4 grid grid-cols-1 sm:grid-cols-2 px-8">
-        
-        {/* Orange Card */}
-        <Card className="flex flex-col h-[300px] w-[80vw] sm:w-[45%] md:w-[300px] lg:w-[400px] bg-[#1A1336] p-8 rounded-lg shadow-lg transition-transform duration-700 ease-in-out hover:translate-y-[-5px] hover:shadow-xl">
-          <div className="flex flex-col h-full">
-            <FolderOpenIcon size={'lg'} />
-            <CardBody className="overflow-visible p-0 flex-grow">
-              <h1 className="text-white">Hello</h1>
-            </CardBody>
-            <CardFooter className="text-small justify-between">
-              <b className="text-white">Orange</b>
-              <p className="text-default-500">$5.50</p>
-            </CardFooter>
-          </div>
-        </Card>
+    <div
+      style={{
+        width: "100%",
+        height: "100vh",
+        justifyContent: "center",
+        minWidth: "50px",
+        maxWidth: "1300px",
+      }}
+    >
+      <div style={{padding: '100px 0px', margin:'0 auto'}}></div>
+      <ScrollRevealWrapper duration={0.8}>
+        <div style={{justifyContent:"center", alignItems:'center', display:'flex', marginBottom: '5%'}}>
+          <h1 style={{fontFamily:'Roboto Mono'}}>Projetos</h1>
+        </div>
+      </ScrollRevealWrapper>
+      <div style={{ height: "100vh" }}>
+        <div
+          style={{ minWidth: "50px", maxWidth: "1000px" }}
+          className="max-w-[1500px] gap-4 grid grid-cols-1 sm:grid-cols-2 px-8"
+        >
+          <ScrollRevealWrapper duration={1.1}>
+            <Card className=" h-[280px] bg-[#1A1336]  rounded-lg shadow-lg transition-transform duration-1000 ease-in-out hover:translate-y-[-5px] hover:shadow-xl">
+              <CardHeader className="justify-between">
+                <BiFolderOpen
+                  style={{ color: "#00bbf0", width: "50px", height: "50px" }}
+                />
+                <div className="flex gap-1">
+                  <div className="flex flex-col gap-1 items-start justify-center">
+                    <h4 className=" text-md font-semibold leading-none text-default-800">
+                      Sistema de Agenda Telecom
+                    </h4>
+                    <h5 className="text-small tracking-tight text-gray-300">
+                      Em andamento
+                    </h5>
+                  </div>
+                </div>
+                <div className="flex gap-5">
+                  <FaGithub style={{ width: "20px", height: "20px" }} />
+                  <TfiNewWindow style={{ width: "20px", height: "20px" }} />
+                </div>
+              </CardHeader>
+              <CardBody className="px-3 py-0 text-small text-gray-300">
+                <p>
+                  Frontend developer and UI/UX enthusiast. Join me on this
+                  coding adventure!
+                </p>
+              </CardBody>
+              <CardFooter className="gap-3">
+                <div className="flex gap-1">
+                  <p className="font-semibold text-default-400 text-small">4</p>
+                  <p className=" text-default-400 text-small">Following</p>
+                </div>
+                <div className="flex gap-1">
+                  <p className="font-semibold text-default-400 text-small">
+                    97.1K
+                  </p>
+                  <p className="text-default-400 text-small">Followers</p>
+                </div>
+              </CardFooter>
+            </Card>
+          </ScrollRevealWrapper>
 
-        {/* Tangerine Card */}
-        <Card className="flex flex-col h-[300px] w-[80vw] sm:w-[45%] md:w-[300px] lg:w-[400px] bg-[#1A1336] p-8 rounded-lg shadow-lg transition-transform duration-700 ease-in-out hover:translate-y-[-5px] hover:shadow-xl">
-          <div className="flex flex-col h-full">
-            <FolderOpenIcon size={'lg'} />
-            <CardBody className="overflow-visible p-0 flex-grow">
-              <h1 className="text-white">Hello</h1>
-            </CardBody>
-            <CardFooter className="text-small justify-between">
-              <b className="text-white">Tangerine</b>
-              <p className="text-default-500">$3.00</p>
-            </CardFooter>
-          </div>
-        </Card>
-
-        {/* Raspberry Card */}
-        <Card className="flex flex-col h-[300px] w-[80vw] sm:w-[45%] md:w-[300px] lg:w-[400px] bg-[#1A1336] p-8 rounded-lg shadow-lg transition-transform duration-700 ease-in-out hover:translate-y-[-5px] hover:shadow-xl">
-          <div className="flex flex-col h-full">
-            <FolderOpenIcon size={'lg'} />
-            <CardBody className="overflow-visible p-0 flex-grow">
-              <h1 className="text-white">Hello</h1>
-            </CardBody>
-            <CardFooter className="text-small justify-between">
-              <b className="text-white">Raspberry</b>
-              <p className="text-default-500">$10.00</p>
-            </CardFooter>
-          </div>
-        </Card>
-
-        {/* Lemon Card */}
-        <Card className="flex flex-col h-[300px] w-[80vw] sm:w-[45%] md:w-[300px] lg:w-[400px] bg-[#1A1336] p-8 rounded-lg shadow-lg transition-transform duration-1000 ease-in-out hover:translate-y-[-5px] hover:shadow-xl">
-          <div className="flex flex-col h-full">
-            <FolderOpenIcon size={'lg'} />
-            <CardBody className="overflow-visible p-0 flex-grow">
-              <h1 className="text-white">Hello</h1>
-            </CardBody>
-            <CardFooter className="text-small justify-between">
-              <b className="text-white">Lemon</b>
-              <p className="text-default-500">$5.30</p>
-            </CardFooter>
-          </div>
-        </Card>
-
+          <ScrollRevealWrapper duration={1.3}>
+            <Card className="min-w-full h-[280px]  bg-[#1A1336]  rounded-lg shadow-lg transition-transform duration-1000 ease-in-out hover:translate-y-[-5px] hover:shadow-xl">
+              <CardHeader className="justify-between">
+                <div className="flex gap-5">
+                  <BiFolderOpen
+                    style={{ color: "#00bbf0", width: "50px", height: "50px" }}
+                  />
+                  <div className="flex flex-col gap-1 items-start justify-center">
+                    <h4 className=" text-md font-semibold leading-none text-default-800">
+                      Sistema de Agenda Telecom
+                    </h4>
+                  </div>
+                </div>
+                <div className="flex gap-5">
+                  <FaGithub style={{ width: "20px", height: "20px" }} />
+                  <TfiNewWindow style={{ width: "20px", height: "20px" }} />
+                </div>
+              </CardHeader>
+              <CardBody className="px-3 py-0 text-small text-gray-300">
+                <p>
+                  Frontend developer and UI/UX enthusiast. Join me on this
+                  coding adventure!
+                </p>
+                <span className="pt-2">
+                  #FrontendWithZoey
+                  <span className="py-2" aria-label="computer" role="img">
+                    💻
+                  </span>
+                </span>
+              </CardBody>
+              <CardFooter className="gap-3">
+                <div className="flex gap-1">
+                  <p className="font-semibold text-default-400 text-small">4</p>
+                  <p className=" text-default-400 text-small">Following</p>
+                </div>
+                <div className="flex gap-1">
+                  <p className="font-semibold text-default-400 text-small">
+                    97.1K
+                  </p>
+                  <p className="text-default-400 text-small">Followers</p>
+                </div>
+              </CardFooter>
+            </Card>
+          </ScrollRevealWrapper>
+          <ScrollRevealWrapper width={"100vh"} duration={1.2}>
+            <Card className=" h-[280px]  bg-[#1A1336]  rounded-lg shadow-lg transition-transform duration-1000 ease-in-out hover:translate-y-[-5px] hover:shadow-xl">
+              <CardHeader className="justify-between">
+                <div className="flex gap-5">
+                  <BiFolderOpen
+                    style={{ color: "#00bbf0", width: "50px", height: "50px" }}
+                  />
+                  <div className="flex flex-col gap-1 items-start justify-center">
+                    <h4 className=" text-md font-semibold leading-none text-gray-300">
+                      Sistema de Agenda Telecom
+                    </h4>
+                  </div>
+                </div>
+                <div className="flex gap-5">
+                  <FaGithub style={{ width: "20px", height: "20px" }} />
+                  <TfiNewWindow style={{ width: "20px", height: "20px" }} />
+                </div>
+              </CardHeader>
+              <CardBody className="px-3 py-0 text-small text-gray-300">
+                <p>
+                  Frontend developer and UI/UX enthusiast. Join me on this
+                  coding adventure!
+                </p>
+              </CardBody>
+              <CardFooter className="gap-3">
+                <div className="flex gap-1">
+                  <p className="font-semibold text-default-400 text-small">4</p>
+                  <p className=" text-default-400 text-small">Following</p>
+                </div>
+                <div className="flex gap-1">
+                  <p className="font-semibold text-gray-300 text-small">
+                    97.1K
+                  </p>
+                  <p className="text-default-400 text-small">Followers</p>
+                </div>
+              </CardFooter>
+            </Card>
+          </ScrollRevealWrapper>
+          <ScrollRevealWrapper width={"100vh"} duration={1.4}>
+            <Card className=" h-[280px]  bg-[#1A1336]  rounded-lg shadow-lg transition-transform duration-1000 ease-in-out hover:translate-y-[-5px] hover:shadow-xl">
+              <CardHeader className="justify-between">
+                <div className="flex gap-5">
+                  <BiFolderOpen
+                    style={{ color: "#00bbf0", width: "50px", height: "50px" }}
+                  />
+                  <div className="flex flex-col gap-1 items-start justify-center">
+                    <h4 className=" text-md font-semibold leading-none text-gray-300">
+                      Sistema de Agenda Telecom
+                    </h4>
+                  </div>
+                </div>
+                <div className="flex gap-5">
+                  <FaGithub style={{ width: "20px", height: "20px" }} />
+                  <TfiNewWindow style={{ width: "20px", height: "20px" }} />
+                </div>
+              </CardHeader>
+              <CardBody className="px-3 py-0  text-small text-gray-300">
+                <p>
+                  Frontend developer and UI/UX enthusiast. Join me on this
+                  coding adventure!
+                </p>
+              </CardBody>
+              <CardFooter className="gap-3">
+                <div className="flex gap-1">
+                  <p className="font-semibold text-gray-300 text-small">4</p>
+                  <p className=" text-default-400 text-small">Following</p>
+                </div>
+                <div className="flex gap-1">
+                  <p className="font-semibold text-default-400 text-small">
+                    97.1K
+                  </p>
+                  <p className="text-default-400 text-small">Followers</p>
+                </div>
+              </CardFooter>
+            </Card>
+          </ScrollRevealWrapper>
+        </div>
       </div>
-    </>
+    </div>
   );
 }

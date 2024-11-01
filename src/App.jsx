@@ -1,12 +1,12 @@
-import React from "react";
 import Navbar_novo from "./navbar";
 import Image from "./components/Image";
 import Typewriter from "./typed";
 import Cards1 from "./cards";
-import TESTE from "./components/h1";
 import { Button } from "@nextui-org/react";
 import APR from "./components/apr";
 import ScrollRevealWrapper from "./components/wrapper";
+import React, { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 function App() {
   return (
@@ -19,16 +19,16 @@ function App() {
         flexDirection: "column",
         alignItems: "center",
         overflow: "auto",
-        
+
       }}
     >
       <Navbar_novo />
 
       <APR />
+      <div>
 
-      <ScrollRevealWrapper>
-        <TESTE />
-      </ScrollRevealWrapper>
+      <Cards1 />
+      </div>
     </div>
   );
 }

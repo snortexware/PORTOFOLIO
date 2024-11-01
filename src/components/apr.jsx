@@ -4,6 +4,9 @@ import { Button } from "@nextui-org/react";
 import ScrollRevealWrapper from "./wrapper";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import  {React, useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
+import Cards1 from "../cards";
 
 const APR = () => {
   const { ref, inView } = useInView({
@@ -13,11 +16,11 @@ const APR = () => {
   return (
     <div
       style={{
-        minWidth: "50px",
-        maxWidth: "1300px",
-        padding: "30px",
-        minHeight: "100vh",
-        marginLeft: "-5%",
+        height: '100vh',
+        justifyContent:'center',
+        alignItems:'center',
+        maxWidth: "100vw",
+        margin: '0 auto'
       }}
     >
       <motion.div
@@ -28,7 +31,7 @@ const APR = () => {
       >
         <Typography
           style={{
-            fontSize: "clamp(10px, 3vw, 14px)", // Minimum 10px, ideal 2vw, max 16px
+            fontSize: "clamp(10px, 2.5vw, 14px)", // Minimum 10px, ideal 2vw, max 16px
             fontFamily: "Roboto Mono",
             marginBottom: "5px",
             color: "#00bbf0",
@@ -54,7 +57,7 @@ const APR = () => {
         <Typography
           style={{
             fontFamily: "Lexend Deca",
-            fontSize: "clamp(30px, 5vw, 100px)", // Dynamic size for <h1> with limits
+            fontSize: "clamp(25px, 5vw, 100px)", // Dynamic size for <h1> with limits
             color: "#00bbf0",
             marginBottom: "10px",
           }}
@@ -70,8 +73,8 @@ const APR = () => {
       >
       <p
         style={{
-          fontSize: "clamp(10px, 2.5vw, 14px)", // Responsive paragraph font size
-          color: "#d9dad7",
+          fontSize: "clamp(10px, 2.5vw, 10px)", // Responsive paragraph font size
+          color: '#d1d5db',
         }}
       >
         Sou um desenvolvedor de software baseado em Gaspar, SC,
@@ -96,6 +99,9 @@ const APR = () => {
         Entre em contato
       </Button>
       </motion.div>
+      <div>
+
+      </div>
     </div>
   );
 };
