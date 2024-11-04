@@ -29,10 +29,10 @@ function App() {
 
           <APR />
         </div>
+        <About />
       </div>
       <div>
 
-        <About />
 
         <Cards1 />
 
