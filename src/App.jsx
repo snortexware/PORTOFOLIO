@@ -7,30 +7,36 @@ import APR from "./components/apr";
 import ScrollRevealWrapper from "./components/wrapper";
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
+import About from "./components/about"
 
 function App() {
   return (
     <div
       style={{
         backgroundColor: "#111d5e",
-        height: "100vh",
-        width: "100vw",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         overflow: "auto",
-
+        width: "100vw",
+        height: "100vh"
       }}
     >
       <Navbar_novo />
+      <div>
 
-      <APR />
+        <div>
 
-      
-<div>
+          <APR />
+        </div>
+      </div>
+      <div>
 
-      <Cards1 />
-</div>
+        <About />
+
+        <Cards1 />
+
+      </div>
     </div>
   );
 }

@@ -2,15 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 .custom-navbar {
-    margin-top: 20px;
-    background-color: #111d5e; /* Cor desejada */
-    display: flex;
+    background-color: #111d5e; 
     color: rgb(244, 244, 244);
     font-family: "Space Mono", "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    z-index: 0;
+
   }
-  .custom-navmenu{
-    background-color:#111d5e;
-  }
+    
 
 
 

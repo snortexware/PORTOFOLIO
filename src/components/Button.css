@@ -1,62 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rowdies:wght@300;400;700&family=Varela+Round&display=swap');
 
-  .custom-button-number{
-    
-    font-size: 12px;
-    font-family: Roboto Mono; 
-    color: #00bbf0;
-  }
+.custom-button-number {
 
-  .custom-button {
-    display: flex;
-    gap:10px;
-    position: relative;
-    overflow: hidden;
-    background: transparent;
-    padding: 10px 15px; /* Adjust padding for better sizing */
-    border-radius: 15px;
-    font-size: 0.8rem;
-    color: #e0ffff;
-    font-family: 'Roboto Mono';
-    font-weight: inherit;
-    cursor: pointer;
-    z-index: 1;
-    transition: color 0.3s; /* Smooth color transition */
-  }
-  
-  .custom-button:active {
-    transform: scale(0.95);
-  }
-  
-  .custom-button::before {
-    content: '';
-    position: absolute;
-    inset: -3px 30px; /* Starting position */
-    transition: inset 0.35s ease, background 0.35s ease, border 0.35s ease; /* Smooth transition */
-    border-radius: 15px; /* Match the button border radius */
-    background: transparent; /* Start transparent */
-    border: 2px solid transparent; /* Start with a transparent border */
-    z-index: -2;
-  }
-  
-  .custom-button:hover::before {
-    inset: -1px 0px; /* Ending position on hover */
-    border: 2px solid #00bbf0; /* Change border color on hover */
-  }
-  
-  .custom-button::after {
-    content: '';
-    position: absolute;
-    inset: 3px;
-    border-radius: 10px;
-    z-index: -1;
-    transition: background 0.3s; /* Smooth background transition */
-  }
+  font-size: 12px;
+  font-family: Roboto Mono;
+  color: #00bbf0;
+}
 
-  
-  .custom-button:not(:hover)::before {
-    inset: -3px 30px; /* Return to the original position when not hovering */
-    background: transparent; /* Reset to transparent */
-    border: 2px solid transparent; /* Reset to transparent border */
-  }
-  
+.custom-button {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  color: #e0ffff;
+  font-family: 'Roboto Mono';
+  font-weight: inherit;
+  cursor: pointer;
+  z-index: 1;
+  transition: color 0.3s;
+}
+
+.custom-button:active {
+  transform: scale(0.95);
+}
+
+.custom-button::before {
+  content: '';
+  position: absolute;
+  inset: -3px 30px;
+  transition: inset 0.35s ease, background 0.35s ease, border 0.35s ease;
+  border-radius: 15px;
+  background: transparent;
+  border: 2px solid transparent;
+  z-index: -2;
+}
+
+.custom-button:hover::before {
+  inset: -1px 0px;
+  border: 2px solid #00bbf0;
+}
+
+.custom-button::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border-radius: 10px;
+  z-index: -1;
+  transition: background 0.3s;
+}
+
+
+.custom-button:not(:hover)::before {
+  inset: -3px 30px;
+  background: transparent;
+  border: 2px solid transparent;
+}

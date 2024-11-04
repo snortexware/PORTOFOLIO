@@ -16,6 +16,7 @@ import React from "react";
 import Stack from "@mui/joy/Stack";
 
 export default function Navbar_novo() {
+
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
@@ -31,34 +32,30 @@ export default function Navbar_novo() {
     "Log Out",
   ];
 
-  const handleReshap = () => {
-    // This will reload the page; you can replace it with any other action you like.
-    window.location.reload();
-  };
+
 
   return (
+
     <Navbar
-      shouldHideOnScroll
       maxWidth="full"
-      position="sticky"
-      color="#f96d00"
+      shouldHideOnScroll
       className="custom-navbar"
 
     >
-        <NavbarBrand>
-          <AcmeLogo />
-        </NavbarBrand>
-        
+      <NavbarBrand>
+        <AcmeLogo />
+      </NavbarBrand>
 
-      <NavbarContent justify="end" className="custom-navbar-content">
+
+      <NavbarContent justify="end">
         <NavbarItem className="hidden sm:flex">
-          <button className="custom-button">
+          <button onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })} className="custom-button">
             <p className="custom-button-number">01.</p> Sobre
           </button>
         </NavbarItem>
         <NavbarItem className="hidden sm:flex">
-          <button className="custom-button">
-            <p className="custom-button-number">02.</p> Projetos
+          <button onClick={() => document.getElementById("projects").scrollIntoView({ behavior: "smooth" })} className="custom-button">
+            <p className="custom-button-number">02.</p>
           </button>
         </NavbarItem>
         <NavbarItem className="hidden sm:flex">
@@ -73,10 +70,10 @@ export default function Navbar_novo() {
         </NavbarItem>
       </NavbarContent>
       <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
-          justify="end"
-        />
+        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        className="sm:hidden"
+        justify="end"
+      />
       <NavbarMenu className="custom-navmenu">
         <NavbarMenuItem>
           <button className="custom-button">
@@ -93,6 +90,8 @@ export default function Navbar_novo() {
           </button>
         </NavbarMenuItem>
       </NavbarMenu>
+      <>
+      </>
     </Navbar>
   );
 }
