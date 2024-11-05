@@ -133,7 +133,7 @@ const About = () => {
 
 
 
-                                <div className="relative flex items-center justify-center w-full sm:w-[211px] md:w-[300px] mt-8 md:mt-0">
+                                <div className="relative flex items-center justify-center w-full w-[300px] sm:w-[211px] md:w-[300px] mt-8 md:mt-0">
                                     <Card>
                                         <CardBody>
                                             <Image

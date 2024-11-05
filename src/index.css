@@ -5,8 +5,7 @@
     background-color: #111d5e; 
     color: rgb(244, 244, 244);
     font-family: "Space Mono", "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-    z-index: 0;
-
+    position: static;
   }
     
 

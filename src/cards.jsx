@@ -123,26 +123,25 @@ export default function Cards1() {
               </CardHeader>
               <CardBody className="px-3 py-0 text-small text-gray-300">
                 <p>
-                  Frontend developer and UI/UX enthusiast. Join me on this
-                  coding adventure!
+                  
                 </p>
                 <span className="pt-2">
-                  #FrontendWithZoey
+                  
                   <span className="py-2" aria-label="computer" role="img">
-                    💻
+                    
                   </span>
                 </span>
               </CardBody>
               <CardFooter className="gap-3">
                 <div className="flex gap-1">
                   <p className="font-semibold text-default-400 text-small">4</p>
-                  <p className=" text-default-400 text-small">Following</p>
+                  <p className=" text-default-400 text-small"></p>
                 </div>
                 <div className="flex gap-1">
                   <p className="font-semibold text-default-400 text-small">
-                    97.1K
+                    
                   </p>
-                  <p className="text-default-400 text-small">Followers</p>
+                  <p className="text-default-400 text-small"></p>
                 </div>
               </CardFooter>
             </Card>
@@ -167,20 +166,18 @@ export default function Cards1() {
               </CardHeader>
               <CardBody className="px-3 py-0 text-small text-gray-300">
                 <p>
-                  Frontend developer and UI/UX enthusiast. Join me on this
-                  coding adventure!
+                  
                 </p>
               </CardBody>
               <CardFooter className="gap-3">
                 <div className="flex gap-1">
                   <p className="font-semibold text-default-400 text-small">4</p>
-                  <p className=" text-default-400 text-small">Following</p>
+                  <p className=" text-default-400 text-small"></p>
                 </div>
                 <div className="flex gap-1">
                   <p className="font-semibold text-gray-300 text-small">
-                    97.1K
                   </p>
-                  <p className="text-default-400 text-small">Followers</p>
+                  <p className="text-default-400 text-small"></p>
                 </div>
               </CardFooter>
             </Card>
@@ -205,20 +202,18 @@ export default function Cards1() {
               </CardHeader>
               <CardBody className="px-3 py-0  text-small text-gray-300">
                 <p>
-                  Frontend developer and UI/UX enthusiast. Join me on this
-                  coding adventure!
+                  
                 </p>
               </CardBody>
               <CardFooter className="gap-3">
                 <div className="flex gap-1">
                   <p className="font-semibold text-gray-300 text-small">4</p>
-                  <p className=" text-default-400 text-small">Following</p>
+                  <p className=" text-default-400 text-small"></p>
                 </div>
                 <div className="flex gap-1">
                   <p className="font-semibold text-default-400 text-small">
-                    97.1K
                   </p>
-                  <p className="text-default-400 text-small">Followers</p>
+                  <p className="text-default-400 text-small"></p>
                 </div>
               </CardFooter>
             </Card>
