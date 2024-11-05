@@ -49,7 +49,7 @@ const About = () => {
                                 </Typography>
                             </div>
 
-                            <div className="flex flex-col md:flex-row items-start gap-x-24 max-w-full">
+                            <div className="flex flex-col md:flex-row items-start gap-x-12 max-w-full">
                                 <div >
                                     <Typography style={{ fontSize: "clamp(10px, 2.5vw, 15px)", color: '#d1d5db' }}>
                                         Olá, eu sou Lucas, um Desenvolvedor de Software e moro em Gaspar, Brasil.
@@ -132,7 +132,7 @@ const About = () => {
 
 
 
-                                <div className="relative flex items-center justify-center w-full md:w-auto mt-8 md:mt-0">
+                                <div className="relative flex items-center justify-center w-full sm:w-[211px] md:w-[300px] mt-8 md:mt-0">
                                     <Card>
                                         <CardBody>
                                             <Image
