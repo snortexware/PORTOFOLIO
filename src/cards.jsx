@@ -70,7 +70,12 @@ export default function Cards1() {
                   </div>
                 </div>
                 <div className="flex gap-5">
-                  <FaGithub style={{ width: "20px", height: "20px" }} />
+
+                  <FaGithub style={{ width: "20px", height: "20px" }} >
+
+                  </FaGithub>
+                  
+
                   <TfiNewWindow style={{ width: "20px", height: "20px" }} />
                 </div>
               </CardHeader>
@@ -112,13 +117,19 @@ export default function Cards1() {
                   />
                   <div className="flex flex-col gap-1 items-start justify-center">
                     <h4 className=" text-md font-semibold leading-none text-default-800">
-                      Sistema de Agenda Telecom
+                      Cadastro Automatico Bemtevi Ksys
                     </h4>
+                    <h5 className="text-small tracking-tight text-gray-300">
+                      Completo
+                    </h5>
                   </div>
                 </div>
                 <div className="flex gap-5">
+
                   <FaGithub style={{ width: "20px", height: "20px" }} />
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/snortexware/cadastro-automatico">
                   <TfiNewWindow style={{ width: "20px", height: "20px" }} />
+                  </a>
                 </div>
               </CardHeader>
               <CardBody className="px-3 py-0 text-small text-gray-300">
@@ -196,7 +207,8 @@ export default function Cards1() {
                   </div>
                 </div>
                 <div className="flex gap-5">
-                  <FaGithub style={{ width: "20px", height: "20px" }} />
+                  <FaGithub style={{ width: "20px", height: "20px" }} >
+                  </FaGithub>
                   <TfiNewWindow style={{ width: "20px", height: "20px" }} />
                 </div>
               </CardHeader>

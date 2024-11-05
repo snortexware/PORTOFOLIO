@@ -89,7 +89,7 @@ const APR = () => {
 
             <p
               style={{
-                fontSize: "clamp(10px, 2.5vw, 15px)", // Responsive paragraph font size
+                fontSize: "clamp(10px, 2vw, 15px)", // Responsive paragraph font size
                 color: '#d1d5db',
               }}
             >
