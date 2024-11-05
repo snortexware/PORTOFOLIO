@@ -18,7 +18,7 @@ const About = () => {
                     margin: "0 auto",
                 }}>
 
-                    <div className="gap-x-5 flex flex-col md:flex-row items-center w-full ">
+                    <div className="flex flex-col md:flex-row items-center w-full ">
                         <div>
                             <div
                                 style={{
@@ -27,6 +27,7 @@ const About = () => {
                                     alignItems: 'baseline',
                                     display: 'flex',
                                     marginBottom: '5%',
+                                    gap:"10px"
                                 }}
                             >
                                 <Typography

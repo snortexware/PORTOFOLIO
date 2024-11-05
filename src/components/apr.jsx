@@ -76,7 +76,7 @@ const APR = () => {
                 LineWeight: "0.9"
               }}
             >
-              Construo aplicações web<br></br> e backend.
+              Construo aplicações web<br></br> e back-end.
             </Typography>
           </motion.div>
           <motion.div
