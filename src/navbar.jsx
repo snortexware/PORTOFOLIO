@@ -44,7 +44,7 @@ export default function Navbar_novo() {
         </NavbarItem>
         <NavbarItem className="hidden sm:flex">
           <button onClick={() => document.getElementById("projects").scrollIntoView({ behavior: "smooth" })} className="custom-button">
-            <p className="custom-button-number">02.</p>
+            <p className="custom-button-number">02.</p> Projetos
           </button>
         </NavbarItem>
         <NavbarItem className="hidden sm:flex">
