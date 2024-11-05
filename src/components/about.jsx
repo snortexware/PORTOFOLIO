@@ -13,6 +13,7 @@ const About = () => {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
+                    maxWidth:"900px",
                     width: "100%",
                     margin: "0 auto",
                 }}>
@@ -136,7 +137,6 @@ const About = () => {
                                         <CardBody>
                                             <Image
                                                 alt="NextUI hero Image with delay"
-                                                
                                                 src="https://avatars.githubusercontent.com/u/159702740?v=4"
                                             />
                                         </CardBody>
