@@ -8,6 +8,23 @@
     position: static;
   }
     
+  /* Neon border styling */
+/* Neon border styling */
+.neon-border {
+  position: relative;
+  padding: 6px; /* Adjust padding to control the size of the neon effect */
+  border-radius: 25px; /* Match the card’s radius */
+  background: linear-gradient(45deg, rgba(58, 120, 255, 0.5), #00bbf0);
+  box-shadow: 0 0 5px #00bbf0, 0 0 5px #00bbf0;
+  transform: translate(-10px, -10px); /* Initial offset to the left and up */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the hover effect */
+}
+
+.neon-border:hover {
+  transform: translate(0, 0); /* Align with the image on hover */
+}
+
+
 
 
 

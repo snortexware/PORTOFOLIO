@@ -13,7 +13,7 @@ const About = () => {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    maxWidth:"900px",
+                    maxWidth: "900px",
                     width: "100%",
                     margin: "0 auto",
                 }}>
@@ -27,7 +27,7 @@ const About = () => {
                                     alignItems: 'baseline',
                                     display: 'flex',
                                     marginBottom: '5%',
-                                    gap:"10px"
+                                    gap: "10px"
                                 }}
                             >
                                 <Typography
@@ -62,20 +62,22 @@ const About = () => {
                                         <br />
                                         Aqui estão algumas tecnologias que tenho utilizado recentemente:
                                     </Typography>
-                                    <div style={{maxWidth:"500px", display: "flex", flexDirection: "row", alignItems: "center",justifyContent: "start", margin: "30px auto", gap:"15%" }}>
+                                    <div
+                                        className="relative flex items-center justify-center top-4 grid grid-cols-2 sm:grid-cols-3 px-0"
+                                    >
 
 
                                         <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", margin: "0px 0px", marginTop: "5%" }}>
 
                                             <div style={{ display: "flex", flexDirection: "row", gap: "10px", alignItems: "center" }}>
                                                 <MdDoubleArrow size="14px" color="#00bbf0" />
-                                                <Typography style={{ fontFamily: 'Roboto Mono',fontSize: "clamp(10px, 2.5vw, 14px)", color: '#d1d5db',  textAlign: "center" }}>
+                                                <Typography style={{ fontFamily: 'Roboto Mono', fontSize: "clamp(10px, 2.5vw, 14px)", color: '#d1d5db', textAlign: "center" }}>
                                                     React
                                                 </Typography>
                                             </div>
                                             <div style={{ display: "flex", flexDirection: "row", gap: "10px", alignItems: "center" }}>
                                                 <MdDoubleArrow size="14px" color="#00bbf0" />
-                                                <Typography style={{ fontFamily: 'Roboto Mono',fontSize: "clamp(10px, 2.5vw, 14px)", color: '#d1d5db',  textAlign: "center" }}>
+                                                <Typography style={{ fontFamily: 'Roboto Mono', fontSize: "clamp(10px, 2.5vw, 14px)", color: '#d1d5db', textAlign: "center" }}>
                                                     Vite.js
                                                 </Typography>
                                             </div>
@@ -86,13 +88,13 @@ const About = () => {
 
                                             <div style={{ display: "flex", flexDirection: "row", gap: "10px", alignItems: "center" }}>
                                                 <MdDoubleArrow size="14px" color="#00bbf0" />
-                                                <Typography style={{fontFamily: 'Roboto Mono', fontSize: "clamp(10px, 2.5vw, 14px)", color: '#d1d5db',  textAlign: "center" }}>
+                                                <Typography style={{ fontFamily: 'Roboto Mono', fontSize: "clamp(10px, 2.5vw, 14px)", color: '#d1d5db', textAlign: "center" }}>
                                                     Javascript
                                                 </Typography>
                                             </div>
                                             <div style={{ display: "flex", flexDirection: "row", gap: "10px", alignItems: "center" }}>
                                                 <MdDoubleArrow size="14px" color="#00bbf0" />
-                                                <Typography style={{fontFamily: 'Roboto Mono', fontSize: "clamp(10px, 2.5vw, 14px)", color: '#d1d5db', textAlign: "center" }}>
+                                                <Typography style={{ fontFamily: 'Roboto Mono', fontSize: "clamp(10px, 2.5vw, 14px)", color: '#d1d5db', textAlign: "center" }}>
                                                     Java
                                                 </Typography>
                                             </div>
@@ -104,13 +106,13 @@ const About = () => {
 
                                             <div style={{ display: "flex", flexDirection: "row", gap: "10px", alignItems: "center" }}>
                                                 <MdDoubleArrow size="14px" color="#00bbf0" />
-                                                <Typography style={{ fontFamily: 'Roboto Mono',fontSize: "clamp(10px, 2.5vw, 14px)", color: '#d1d5db',  textAlign: "center" }}>
+                                                <Typography style={{ fontFamily: 'Roboto Mono', fontSize: "clamp(10px, 2.5vw, 14px)", color: '#d1d5db', textAlign: "center" }}>
                                                     Node.js
                                                 </Typography>
                                             </div>
                                             <div style={{ display: "flex", flexDirection: "row", gap: "10px", alignItems: "center" }}>
                                                 <MdDoubleArrow size="14px" color="#00bbf0" />
-                                                <Typography style={{whiteSpace: "nowrap",fontFamily: 'Roboto Mono', fontSize: "clamp(10px, 2.5vw, 14px)", color: '#d1d5db',  textAlign: "center" }}>
+                                                <Typography style={{ whiteSpace: "nowrap", fontFamily: 'Roboto Mono', fontSize: "clamp(10px, 2.5vw, 14px)", color: '#d1d5db', textAlign: "center" }}>
                                                     Spring Framework
                                                 </Typography>
                                             </div>
@@ -135,12 +137,10 @@ const About = () => {
 
                                 <div className="relative flex items-center justify-center w-[300px] sm:w-[211px] md:w-[300px] mt-8 md:mt-0 mx-auto">
                                     <Card>
-                                        <CardBody>
-                                            <Image
-                                                alt="NextUI hero Image with delay"
-                                                src="https://avatars.githubusercontent.com/u/159702740?v=4"
-                                            />
-                                        </CardBody>
+                                        <Image
+                                            alt="NextUI hero Image with delay"
+                                            src="https://avatars.githubusercontent.com/u/159702740?v=4"
+                                        />
                                     </Card>
                                 </div>
                             </div>
