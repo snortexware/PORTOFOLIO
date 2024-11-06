@@ -14,7 +14,6 @@ const Typewriter = ({ text, delay }) => {
     }
   }, [currentIndex, delay, text]);
 
-  // Typing logic goes here
 
   return (
     <>
@@ -23,7 +22,7 @@ const Typewriter = ({ text, delay }) => {
         url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Rowdies:wght@300;400;700&family=Varela+Round&display=swap');
       </style>
       <h1 style={{fontFamily: "Lexend Deca",
-            fontSize: "clamp(30px, 7vw, 70px)", // Dynamic size for <h1> with limits
+            fontSize: "clamp(28px, 5vw, 70px)", // Dynamic size for <h1> with limits
              }}>{currentText}</h1>
     </>
   );

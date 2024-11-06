@@ -8,6 +8,7 @@ import ScrollRevealWrapper from "./components/wrapper";
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import About from "./components/about"
+import Contact from "./components/contact"
 
 function App() {
   return (
@@ -25,16 +26,16 @@ function App() {
       <Navbar_novo />
       <div>
 
-        <div>
 
           <FRONT />
-        </div>
         <About />
       </div>
       <div>
 
-
         <Cards1 />
+<div>
+  <Contact/>
+</div>
 
       </div>
     </div>

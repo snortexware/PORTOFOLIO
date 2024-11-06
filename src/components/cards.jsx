@@ -22,17 +22,10 @@ export default function Cards1() {
     threshold: 0,
   });
   return (
-    <div
-      id="projects"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        maxWidth: "900px",
-        width: "100%",
-        padding:"30px 0px"
-      }}
-    >
-      <div>
+  
+
+    
+      <div id="projects" className="relative grid grid-cols-1 sm:grid-cols-1 flex justify-center  w-[300px] md:w-[900px] mt-8 md:mt-0 mx-auto">
         <ScrollRevealWrapper duration={0.8}>
           <div
             style={{
@@ -43,14 +36,14 @@ export default function Cards1() {
               display: "flex",
               marginBottom: "5%",
             }}
-          >
+            >
             <Typography
               style={{
                 fontSize: "clamp(10px, 2.5vw, 15px)",
                 fontFamily: "Roboto Mono",
                 color: "#00bbf0",
               }}
-            >
+              >
               02.
             </Typography>
             <Typography
@@ -59,15 +52,14 @@ export default function Cards1() {
                 fontFamily: "Lexend Deca",
                 color: "white",
               }}
-            >
+              >
               Projetos
             </Typography>
           </div>
         </ScrollRevealWrapper>
-        <div style={{}} className=" gap-4 grid grid-cols-1 sm:grid-cols-2 px-8">
+        <div style={{}} className=" gap-4 items-center justify-center grid grid-cols-1 sm:grid-cols-2 ">
           <ScrollRevealWrapper duration={1.1}>
             <Card
-              shadow="xl"
               className=" h-[250px] bg-[#162268]  rounded-lg shadow-lg transition duration-500  hover:translate-y-[-5px] hover:shadow-xl"
             >
               <CardHeader className="justify-between">
@@ -279,12 +271,13 @@ export default function Cards1() {
             </Card>
           </ScrollRevealWrapper>
           <ScrollRevealWrapper width={"100vh"} duration={1.2}>
+            
             <Card className=" h-[250px]  bg-[#162268]  rounded-lg shadow-lg transition-transform duration-1000 ease-in-out hover:translate-y-[-5px] hover:shadow-xl">
               <CardHeader className="justify-between">
                 <div className="flex gap-5">
                   <BiFolderOpen
                     style={{ color: "#00bbf0", width: "50px", height: "50px" }}
-                  />
+                    />
                   <div className="flex flex-col gap-1 items-start justify-center">
                     <h4 className=" text-md font-semibold leading-none text-default-800">
                       Fechamento Automatico MZ
@@ -300,7 +293,7 @@ export default function Cards1() {
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://github.com/snortexware/fechamento-automatico_MZ"
-                  >
+                    >
                     <TfiNewWindow style={{ width: "20px", height: "20px" }} />
                   </a>
                 </div>
@@ -323,7 +316,7 @@ export default function Cards1() {
                     color: "#d1d5db",
                     textAlign: "center",
                   }}
-                >
+                  >
                   Javascript
                 </Typography>
                 <div className="flex gap-0">
@@ -348,7 +341,7 @@ export default function Cards1() {
                       color: "#d1d5db",
                       textAlign: "center",
                     }}
-                  >
+                    >
                     CSS
                   </Typography>
                 </div>
@@ -361,7 +354,7 @@ export default function Cards1() {
                       color: "#d1d5db",
                       textAlign: "center",
                     }}
-                  >
+                    >
                     Node.js
                   </Typography>
                 </div>
@@ -403,8 +396,7 @@ export default function Cards1() {
               </CardFooter>
             </Card>
           </ScrollRevealWrapper>
+                    </div>
         </div>
-      </div>
-    </div>
   );
 }
