@@ -10,8 +10,7 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/react";
 import { AcmeLogo } from "./AcmeLogo.jsx";
-import CustomButton from "./components/button1.jsx";
-import "./components/button1.jsx";
+import "./button1.jsx";
 import React from "react";
 import Stack from "@mui/joy/Stack";
 

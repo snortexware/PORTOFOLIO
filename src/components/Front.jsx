@@ -1,15 +1,15 @@
 import Typography from "@mui/joy/Typography";
-import Typewriter from "../typed";
+import Typewriter from "./typed";
 import { Button } from "@nextui-org/react";
 import ScrollRevealWrapper from "./wrapper";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { React, useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
-import Cards1 from "../cards";
+import Cards1 from "./cards";
 import { LineWeight } from "@mui/icons-material";
 
-const APR = () => {
+const FRONT = () => {
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0,
@@ -125,4 +125,4 @@ const APR = () => {
 
 };
 
-export default APR;
+export default FRONT;

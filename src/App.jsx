@@ -1,9 +1,9 @@
-import Navbar_novo from "./navbar";
+import Navbar_novo from "./components/navbar";
 import Image from "./components/Image";
-import Typewriter from "./typed";
-import Cards1 from "./cards";
+import Typewriter from "./components/typed";
+import Cards1 from "./components/cards";
 import { Button } from "@nextui-org/react";
-import APR from "./components/apr";
+import FRONT from "./components/Front";
 import ScrollRevealWrapper from "./components/wrapper";
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
@@ -27,7 +27,7 @@ function App() {
 
         <div>
 
-          <APR />
+          <FRONT />
         </div>
         <About />
       </div>
