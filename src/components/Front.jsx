@@ -73,12 +73,7 @@ const FRONT = () => {
                 </div>
           </ScrollRevealWrapper>
 
-          <motion.div
-            ref={ref}
-            initial={{ opacity: 0, y: 30 }}
-            animate={inView ? { opacity: 1.5, y: 0 } : {}}
-            transition={{ duration: 1.4, ease: "anticipate" }}
-            >
+          <ScrollRevealWrapper duration={1.4}>
             <Button
             onClick={()=> window.location = "mailto:lucasmoreiraprivado@proton.me"}
             style={{ fontFamily: "Lexend Deca", marginTop: "30px" }}
@@ -88,7 +83,7 @@ const FRONT = () => {
             >
               Entre em contato
             </Button>
-          </motion.div>
+          </ScrollRevealWrapper>
 
                 </div>
               </div>
