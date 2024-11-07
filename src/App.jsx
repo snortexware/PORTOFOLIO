@@ -9,6 +9,7 @@ import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import About from "./components/about"
 import Contact from "./components/contact"
+import WATERMARK from "./components/vitemade";
 
 function App() {
   return (
@@ -37,6 +38,10 @@ function App() {
   <Contact/>
 </div>
 
+      </div>
+      <div>
+
+      <WATERMARK/>
       </div>
     </div>
   );
